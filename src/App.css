@@ -1,38 +1,197 @@
-.App {
+body {
+
+  background-color: rgb(54, 52, 52);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.welcomeText {
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem !important;
+  font-weight: 300;
+  color:white;
+  padding: 10px 0px;
+  text-align: center !important;
+  width:fit-content;
+  margin:auto;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+/* Initial styling for .primary-header_links button */
+/* Initial styling for .primary-header_links button */
+.nav-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  margin: 15px auto;
+}
+
+.primary-header_links button {
+  text-align: center;
+  background-color: black;
+  font-size: 1.5rem;
+  margin: 25px;
+  border-radius: 5px;
+  padding: 0px 5px 0px 5px;
+  box-shadow: 2px 2px 6px gray;
+  transition: transform 0.5 ease;
+  position: relative; /* Required for absolute positioning of stars */
+}
+
+/* Add styles for when hovering over .primary-header_links button */
+.primary-header_links button:hover {
+  transform: scale(1.5);
+  box-shadow: 4px 5px 6px gray;
+
+}
+
+/* Keyframes animation for stars */
+.primary-header_links button:hover::after {
+  content: "★";
+  position: absolute;
+  top: -30px;
+  left: 40%;
+  font-size: 24px;
+  color: gold;
+  animation: stars 2s linear infinite;
+}
+
+.link {
+  text-decoration: none;
+  color:white;
+}
+
+.project-body-container {
+  display: flex;
+  flex-direction: column;
+  color:white;
+}
+
+.image-container {
+  margin-top: 15px;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-container img {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 15px 5px 10px rgb(28, 41, 5);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.tech-skills-container {
+  justify-content: center;
+  text-align: center;
+  margin: 25px
+}
+
+
+.projects-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100vw;
+  margin: 25px;
+}
+
+.projects-container li{
+  list-style-type: none;
+}
+
+.button-link h3{
+  padding: 5px 10px !important;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin:auto;
+  width:fit-content;
+  transition: background-color 0.3s ease;
+  animation: backgroundChange 1.5s infinite ease-in-out;
+
+}
+
+.button-link h3:hover {
+  box-shadow: 0 0 0 5px purple;
+  color:white;
+  animation: none; /* Change the shadow color on hover */
+  width:fit-content;
+
+}
+
+
+@keyframes backgroundChange {
+  0% {
+    box-shadow: 0 0 0 0px #eaf0e1; /* Keep the shadow consistent */
+  }
+  25% {
+    box-shadow: 0 0 5px 5px #eaf0e1; /* Increase the blur and spread radius */
+  }
+  50% {
+    box-shadow: 0 0 10px 5px #eaf0e1; /* Further increase the blur and spread radius */
+  }
+  75% {
+    box-shadow: 0 0 5px 5px #eaf0e1; /* Reduce the blur and spread radius */
+  }
+  100% {
+    box-shadow: 0 0 0 0px #eaf0e1; /* Back to the original shadow */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-link :hover {
+  background-color: #06386d;
+  box-shadow: 4px 4px 8px white;
+}
+
+.my-photo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: auto;
+}
+
+.cover-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 3rem;
+  font-size: 1.2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info-container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.info-container a{
+
+  padding: 3rem .70rem;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  align-items: center;
+  margin: 2rem;
+  text-shadow: 1px 1px 2px white, 0 0 1em blue, 0 0 0.2em blue;
+  transition: transform 0.4 ease-in-out;
+}
+
+.references-list :hover {
+  transform: scale(1.4);
+}
+
+.footer-container {
+  text-align: center;
+  color: red;
 }
