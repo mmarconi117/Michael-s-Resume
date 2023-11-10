@@ -4,7 +4,9 @@ body {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-
+h2 {
+  color: white;
+}
 .welcomeText {
   display: flex;
   justify-content: center;
