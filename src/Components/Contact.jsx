@@ -1,9 +1,9 @@
-import "../App.css";
-import me from "../Images/forres.jpeg";
+// import "../App.css";
+
 const Contact = () => {
   return (
     <div>
-      <img className="my-photo" src={me} alt="my image" width="200px" />
+      {/* <img className="my-photo" src={me} alt="my image" width="200px" /> */}
 
       <div className="info-container">
         <h2>

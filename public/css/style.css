@@ -7,7 +7,7 @@
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -39,6 +39,47 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
+
+  h2.designer-text {
+    color: white !important;
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-weight: 400 !important;
+    margin: 0 0 30px 0 !important;
+  }
+  h2.designer-p {
+    color: white !important;
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-weight: 400 !important;
+    margin: 0 0 30px 0 !important;
+    font-weight: bold;
+  }
+
+  h1.designer-text {
+    color:rgb(217, 228, 20) !important;
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-weight: bold !important;
+    margin: 0 0 30px 0 !important;
+  }
+
+  .translucent-bg {
+    position: relative;
+    overflow: hidden; /* Ensure the pseudo-element does not overflow */
+}
+
+.translucent-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(images/img_bg_2.JPG); /* Ensure the image covers the area */
+    opacity: 0.9 !important; /* Adjust opacity as needed, with important tag */
+    z-index: -1; /* Place it behind the content */
+}
+
+
+
 
 figure {
   margin-bottom: 2.5em;
