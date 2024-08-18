@@ -1,4 +1,4 @@
-import Image from "../Images/IMG_0544.PNG";
+// import Image from "../Images/IMG_0544.PNG";
 
 export default function Home() {
   return (
