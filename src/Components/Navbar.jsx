@@ -27,7 +27,7 @@ const Navbar = () => {
           </button>
           <button>
             <a className="link"
-              // href="https://www.linkedin.com/in/fish-kfishersr/details/certifications/"
+              href="https://www.linkedin.com/in/fish-kfishersr/details/certifications/"
               target="_blank"
               rel="noopener noreferrer"
             >
