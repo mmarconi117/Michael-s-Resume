@@ -364,7 +364,7 @@ figure {
   min-height: 700px;
   padding: 2.5em;
   position: relative;
-  bottom: 180px;
+  bottom: 120px;
 }
 
 @media screen and (max-width: 768px) {
