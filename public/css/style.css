@@ -370,7 +370,8 @@ figure {
 @media screen and (max-width: 768px) {
   #colorlib-hero .flexslider .slider-text > .slider-text-inner {
     text-align: center;
-    right: 200px;
+    top: 400px;
+    /* right: 200px; */
   }
 }
 
@@ -391,7 +392,12 @@ figure {
   #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
     font-size: 28px;
   }
+
+  h1.designer-text {
+   display: none;
+  }
 }
+
 
 #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
   font-size: 18px;
