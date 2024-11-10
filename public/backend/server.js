@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 const bcrypt = require('bcrypt');
-const dbConfig = require('./dbConfig');
 require('dotenv').config();
 
 
