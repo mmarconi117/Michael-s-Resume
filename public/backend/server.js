@@ -45,12 +45,12 @@ app.post("/api/send-email", async (req, res) => {
 
     try {
         await transporter.sendMail(mailOptions);
-        res.send("Email sent successfully");
+        res.send("Email sent successfully. You may go back");
     } catch (error) {
         console.error("Error sending email:", error);
         res.status(500).send("Error sending email");
     }
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
