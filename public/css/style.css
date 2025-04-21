@@ -87,6 +87,11 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1; /* Place it behind the content */
 }
 
+.slides li {
+	background-position: center !important;
+	background-size: cover;
+}
+
 
 figure {
   margin-bottom: 2.5em;
