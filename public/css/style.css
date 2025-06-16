@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 
   h1.designer-text {
     color:rgb(8, 36, 45) !important;
+    background-color: rgb(163, 161, 161);
     font-family: "Playfair Display", Georgia, serif !important;
     font-weight: 3000 !important;
     margin-top: 35px !important;
@@ -380,7 +381,7 @@ figure {
 
 #colorlib-hero .flexslider .slider-text > .slider-text-inner h1,
 #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
-  color: rgb(4, 2, 2);
+  color: rgb(254, 247, 247);
   font-family: "Playfair Display", Georgia, serif;
 }
 
@@ -461,7 +462,7 @@ figure {
 }
 
 #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
-  color: rgb(7, 3, 3);
+  color: rgb(222, 207, 207);
   border: 5px solid #000;
   background: transparent !important;
 }
@@ -533,6 +534,14 @@ body.offcanvas {
     .colorlib-contact {
       padding-top: 5em;
       padding-bottom: 8em; } }
+
+      .services h3 {
+  color: white !important;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
 
 .author-img {
   background-size: cover;
