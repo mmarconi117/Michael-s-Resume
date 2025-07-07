@@ -564,7 +564,11 @@ body.offcanvas {
     .colorlib-heading {
       margin-bottom: 3em; } }
 
-      .colorlib-about p {
+     .colorlib-text {
+  color: white !important;
+}
+
+.colorlib-about p {
   color: white !important;
 }
 
