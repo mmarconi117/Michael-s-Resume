@@ -533,7 +533,8 @@ body.offcanvas {
     .colorlib-services,
     .colorlib-contact {
       padding-top: 5em;
-      padding-bottom: 8em; } }
+      padding-bottom: 8em;
+    color: white !important; } }
 
       .services h3 {
   color: white !important;
