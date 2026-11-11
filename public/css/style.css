@@ -868,6 +868,8 @@ body.offcanvas {
       font-size: 16px;
       font-weight: 700;
       text-transform: uppercase; }
+    .services .desc p {
+      color: rgba(255, 255, 255, 0.85); }
   .services.color-2 .icon {
     background: #ec5453; }
     .services.color-2 .icon:before {
