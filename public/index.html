@@ -616,7 +616,7 @@
 								<div class="project" style="background-image: url(images/img-1.jpg);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="work.html">Si Beauty Bar</a></h3>
+											<h3><a href="https://github.com/mmarconi117" target="_blank" rel="noopener noreferrer">Si Beauty Bar</a></h3>
 											<span>Website</span>
 											<p class="icon">
 												<span><a href="#"><i class="icon-share3"></i></a></span>
@@ -631,7 +631,7 @@
 								<div class="project" style="background-image: url(images/img-2.jpg);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="work.html">Crypto</a></h3>
+											<h3><a href="https://github.com/mmarconi117" target="_blank" rel="noopener noreferrer">Crypto</a></h3>
 											<span>Project</span>
 											<p class="icon">
 												<span><a href="#"><i class="icon-share3"></i></a></span>
@@ -646,7 +646,7 @@
 								<div class="project" style="background-image: url(images/img-3.jpg);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="work.html">SONNY LLC</a></h3>
+											<h3><a href="https://github.com/mmarconi117" target="_blank" rel="noopener noreferrer">SONNY LLC</a></h3>
 											<span>Illustration</span>
 											<p class="icon">
 												<span><a href="#"><i class="icon-share3"></i></a></span>
@@ -661,7 +661,7 @@
 								<div class="project" style="background-image: url(images/img-4.jpg);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="work.html">C#</a></h3>
+											<h3><a href="https://github.com/mmarconi117" target="_blank" rel="noopener noreferrer">C#</a></h3>
 											<span>Application</span>
 											<p class="icon">
 												<span><a href="#"><i class="icon-share3"></i></a></span>
@@ -676,7 +676,7 @@
 								<div class="project" style="background-image: url(images/img-5.jpg);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="work.html">Business Website</a></h3>
+											<h3><a href="https://github.com/mmarconi117" target="_blank" rel="noopener noreferrer">Business Website</a></h3>
 											<span>Graphic, Logo</span>
 											<p class="icon">
 												<span><a href="#"><i class="icon-share3"></i></a></span>
@@ -691,7 +691,7 @@
 								<div class="project" style="background-image: url(images/img-6.jpg);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="work.html">More to Come</a></h3>
+											<h3><a href="https://github.com/mmarconi117" target="_blank" rel="noopener noreferrer">More to Come</a></h3>
 											<span>Web Design</span>
 											<p class="icon">
 												<span><a href="#"><i class="icon-share3"></i></a></span>
@@ -816,7 +816,7 @@
 								<div class="row">
 									<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box"
 										data-animate-effect="fadeInRight">
-										<form action="http://localhost:5000/api/send-email" method="POST">
+										<form id="contact-form">
 											<div class="form-group">
 												<input type="text" name="name" class="form-control" placeholder="Name" required>
 											</div>
@@ -866,6 +866,18 @@
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+
+	<!-- Contact form: open the visitor's email app with the message filled in -->
+	<script>
+		document.getElementById("contact-form").addEventListener("submit", function (e) {
+			e.preventDefault();
+			var f = e.target;
+			var subject = f.subject.value || ("Message from " + f.name.value);
+			var body = "Name: " + f.name.value + "\nEmail: " + f.email.value + "\n\n" + f.message.value;
+			window.location.href = "mailto:michaelmarck117@gmail.com?subject=" +
+				encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+		});
+	</script>
 
 </body>
 
